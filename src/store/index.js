@@ -1,6 +1,6 @@
 import { store } from 'quasar/wrappers'
 import { createStore } from 'vuex'
-import solutionPlats from './Solution/store-plats'
+import plats from './store-taches'
 // import example from './module-example'
 
 /*
@@ -15,7 +15,7 @@ import solutionPlats from './Solution/store-plats'
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
-      solutionPlats
+      plats
     },
 
     // enable strict mode (adds overhead!)

@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
 <q-page class="q-pa-lg">
   <div class="row q-gutter-lg">
@@ -9,7 +10,6 @@
 
     <bouton-ajouter
       @click="afficherFormPlat = true" />
-
     <q-dialog
       v-model="afficherFormPlat">
       <form-plat
@@ -34,7 +34,7 @@ export default {
     ...mapGetters('solutionPlats', ['plats'])
   },
   components: {
-    plat: require('components/Solution/Plat.vue').default,
+    plat: require('components/Solution/PlatVue.vue').default,
     'bouton-ajouter': require('components/Solution/BoutonAjouter.vue').default,
     'form-plat': require('components/Solution/FormPlat.vue').default
   }
